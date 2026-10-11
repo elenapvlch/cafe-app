@@ -5,11 +5,10 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-router";
 import { COLORS } from "../data/colors";
-import "../App.css";
 
 export default function Navbar() {
   return (
-    <Box sx={{ flexGrow: 1, color: "pink" }}>
+    <Box sx={{ flexGrow: 1, color: "pink", p: "8px" }}>
       <AppBar
         position="static"
         sx={{ backgroundColor: COLORS.LIGHT_PINK, borderRadius: "12px" }}
@@ -29,15 +28,14 @@ export default function Navbar() {
               borderRadius: "8px",
             }}
           >
-            Cafe Place
+            Café Place
           </Typography>
-          <div
-            // style={{
-            //   display: "flex",
-            //   flexGrow: 1,
-            //   justifyContent: "end",
-            // }}
-            className="nav-menu-container"
+          <Box
+            sx={{
+              display: "flex",
+              flexGrow: 1,
+              justifyContent: "end",
+            }}
           >
             <Button
               component={Link}
@@ -54,19 +52,6 @@ export default function Navbar() {
             </Button>
             <Button
               component={Link}
-              to="/about"
-              color="inherit"
-              sx={{
-                color: COLORS.DARK_PINK,
-                "&:hover": {
-                  backgroundColor: COLORS.LIGHT,
-                },
-              }}
-            >
-              About us
-            </Button>
-            <Button
-              component={Link}
               to="/order "
               color="inherit"
               sx={{
@@ -78,7 +63,20 @@ export default function Navbar() {
             >
               Order
             </Button>
-          </div>
+            <Button
+              component={Link}
+              to="/about"
+              color="inherit"
+              sx={{
+                color: COLORS.DARK_PINK,
+                "&:hover": {
+                  backgroundColor: COLORS.LIGHT,
+                },
+              }}
+            >
+              About us
+            </Button>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

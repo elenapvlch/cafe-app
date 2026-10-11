@@ -14,6 +14,7 @@ export default function ProductCard({ dessert }) {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        backgroundColor: "transparent",
       }}
     >
       <CardMedia
@@ -30,13 +31,20 @@ export default function ProductCard({ dessert }) {
         title={dessert.name}
       />
       <CardContent sx={{ flexGrow: 1 }}>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{
+            color: COLORS.DARK_PINK,
+          }}
+        >
           {dessert.name}
         </Typography>
         <Typography
           variant="body2"
           sx={{
-            color: "text.secondary",
+            color: COLORS.DARK_PINK,
           }}
         >
           {dessert.description}
