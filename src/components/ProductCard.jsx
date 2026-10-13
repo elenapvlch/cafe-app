@@ -27,8 +27,8 @@ export default function ProductCard({ dessert }) {
           },
           objectFit: "cover",
         }}
-        image={dessert.image}
-        title={dessert.name}
+        image={dessert?.image_url}
+        title={dessert?.name}
       />
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography
@@ -47,7 +47,7 @@ export default function ProductCard({ dessert }) {
             color: COLORS.DARK_PINK,
           }}
         >
-          {dessert.description}
+          {dessert?.description}
         </Typography>
       </CardContent>
       <CardActions>

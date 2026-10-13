@@ -1,17 +1,17 @@
 import { COLORS } from "../data/colors";
 import { Box, Grid, Typography } from "@mui/material";
-import PannaCottaImg from "../assets/img_6.jpg";
-import CremeBruleeImg from "../assets/img_2.jpg";
-import MacaronsImg from "../assets/img_5.jpg";
+import PannaCottaImg from "../assets/img_1.jpg";
+import CheescakeImg from "../assets/img_2.jpg";
+import MacaronsImg from "../assets/img_3.jpg";
 
 const itemData = [
   {
     img: PannaCottaImg,
-    title: "Tiramisu",
+    title: "Pannacotta",
   },
   {
-    img: CremeBruleeImg,
-    title: "Cake",
+    img: CheescakeImg,
+    title: "Cheescake",
   },
   {
     img: MacaronsImg,
