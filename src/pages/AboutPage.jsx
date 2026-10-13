@@ -108,7 +108,7 @@ export default function AboutPage() {
           sx={{
             mt: { xs: 3, sm: 4 },
             mb: 2,
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             color: COLORS.DARK_PINK,
           }}
         >
@@ -122,7 +122,7 @@ export default function AboutPage() {
         <Typography
           sx={{
             mb: 2,
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             color: COLORS.DARK_PINK,
           }}
         >
@@ -137,7 +137,7 @@ export default function AboutPage() {
 
         <Typography
           sx={{
-            lineHeight: 1.5,
+            lineHeight: 1.6,
             color: COLORS.DARK_PINK,
           }}
         >
